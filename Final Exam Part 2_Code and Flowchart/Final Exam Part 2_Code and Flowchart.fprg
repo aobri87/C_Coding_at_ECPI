@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="duck3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-04-02 12:11:28 PM"/>
+        <attribute name="created" value="ZHVjazM7REVTS1RPUC1MR0VLSDhBOzIwMjAtMDQtMDI7MTE6MTQ6MTYgQU07Mjc5NA=="/>
+        <attribute name="edited" value="ZHVjazM7REVTS1RPUC1MR0VLSDhBOzIwMjAtMDQtMDI7MTI6MTE6MjggUE07MjsyOTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="o, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the old weekly pay (in dollars):  &quot;" newline="True"/>
+            <input variable="o"/>
+            <output expression="&quot;Enter the new weekly pay (in dollars):  &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;New pay is initially equal to &quot; &amp;n" newline="True"/>
+            <output expression="&quot;Old pay is initially equal to &quot; &amp;o" newline="True"/>
+            <call expression="swapit(&amp;o, &amp;n)"/>
+            <output expression="&quot;New pay is adjusted to &quot; &amp;n" newline="True"/>
+            <output expression="&quot;Old pay is adjusted to &quot; &amp;o" newline="True"/>
+        </body>
+    </function>
+    <function name="swapit" type="None" variable="">
+        <parameters>
+            <parameter name="o" type="Integer" array="False"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <assign variable="I" expression="*o"/>
+            <assign variable="*o" expression="*n"/>
+            <assign variable="*n" expression="*I"/>
+        </body>
+    </function>
+</flowgorithm>
