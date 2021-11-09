@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="duck3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-25 10:47:58 AM"/>
+        <attribute name="created" value="ZHVjazM7REVTS1RPUC1MR0VLSDhBOzIwMjAtMDgtMjU7MDk6MjM6MDcgQU07MjgxMA=="/>
+        <attribute name="edited" value="ZHVjazM7REVTS1RPUC1MR0VLSDhBOzIwMjAtMDgtMjU7MTA6NDc6NTggQU07MjsyOTIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="value" type="Integer" array="True" size="5"/>
+            <output expression="&quot;Enter the value 437 five times: &quot;" newline="True"/>
+            <input variable="value[0]"/>
+            <input variable="value[1]"/>
+            <input variable="value[2]"/>
+            <input variable="value[3]"/>
+            <input variable="value[4]"/>
+            <output expression="&quot;Read with %d:&quot;" newline="True"/>
+            <output expression="value[0] &amp;&quot; &quot;&amp;value[0] &amp;&quot; &quot;&amp;value[0] &amp;&quot; &quot;&amp;value[0] &amp;&quot; &quot;&amp;value[0]" newline="True"/>
+            <output expression="&quot;Read with %i: &quot;" newline="True"/>
+            <output expression="value[1] &amp;&quot; &quot;&amp;value[1] &amp;&quot; &quot;&amp;value[1] &amp;&quot; &quot;&amp;value[1] &amp;&quot; &quot;&amp;value[1]" newline="True"/>
+            <output expression="&quot;Read with %o:&quot;" newline="True"/>
+            <output expression="value[2] &amp;&quot; &quot;&amp;value[2] &amp;&quot; &quot;&amp;value[2] &amp;&quot; &quot;&amp;value[2] &amp;&quot; &quot;&amp;value[2]" newline="True"/>
+            <output expression="&quot;Read with %u:&quot;" newline="True"/>
+            <output expression="value[3] &amp;&quot; &quot;&amp;value[3] &amp;&quot; &quot;&amp;value[3] &amp;&quot; &quot;&amp;value[3] &amp;&quot; &quot;&amp;value[3]" newline="True"/>
+            <output expression="&quot;Read with %x: &quot;" newline="True"/>
+            <output expression="value[4] &amp;&quot; &quot;&amp;value[4] &amp;&quot; &quot;&amp;value[4] &amp;&quot; &quot;&amp;value[4] &amp;&quot; &quot;&amp;value[4]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
