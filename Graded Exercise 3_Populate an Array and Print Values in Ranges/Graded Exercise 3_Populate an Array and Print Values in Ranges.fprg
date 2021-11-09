@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="duck3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-03-24 04:39:48 PM"/>
+        <attribute name="created" value="ZHVjazM7REVTS1RPUC1MR0VLSDhBOzIwMjAtMDMtMjM7MDY6NTc6MjUgUE07MjgyMg=="/>
+        <attribute name="edited" value="ZHVjazM7REVTS1RPUC1MR0VLSDhBOzIwMjAtMDMtMjQ7MDQ6Mzk6NDggUE07MzsyOTM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salaryArray" type="Integer" array="True" size="9"/>
+            <assign variable="salaryArray[0]" expression="0"/>
+            <assign variable="salaryArray[1]" expression="0"/>
+            <assign variable="salaryArray[2]" expression="0"/>
+            <declare name="sales, salary" type="Integer" array="False" size=""/>
+            <assign variable="sales" expression="0"/>
+            <while expression="sales&gt;-1">
+                <output expression="&quot;Enter employee gross sales (-1 to end): &quot;" newline="False"/>
+                <input variable="sales"/>
+                <if expression="sales&gt;-1">
+                    <then>
+                        <output expression="&quot;Employee Salary is $&quot; &amp;200+sales" newline="True"/>
+                        <assign variable="salary" expression="200+sales"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="salary&gt;=200">
+                    <then>
+                        <assign variable="salaryArray[0]" expression="salaryArray[0]+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;Employees in the range:&quot;" newline="True"/>
+            <output expression="&quot;$200-$299 : &quot; &amp;salaryArray[0]" newline="True"/>
+            <output expression="&quot;$300-$399 : &quot; &amp;salaryArray[1]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
